@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Web Development Assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="https://super-static-assets.s3.amazonaws.com/07a73d88-42cd-40c2-bcc9-9cbaf58fa247/uploads/logo/97d3903f-9613-4744-9045-1eb023476397.png" style="width: 200px;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container1">
+        <div class="text">
+            <h1 style="color: red;">AWARD WINNING</h1>
+            <H1>DIGITAL MARKETING AGENCY</H1>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellintesque vital ante at alit fringilla ac at pursus. Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+             <!-- Contact Us section -->
+        <div id="contact" class="mt-5">
+            <button id="contact-button" class="bb" style="background-color: red; width: 100px; height: 40px; border-radius: 10px;" >Contact Us</button>
+        </div>
+        </div>
+        <div class="image">
+            <img src="https://media.gettyimages.com/id/1293903541/photo/young-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=AvQGpGDrH-0nUNAL-uHuc1uidcTiiLbovyKJjsN_mOk=" alt="Description of Image">
+        </div>
+    </div>
+        <!-- What we do section -->
+        <div id="what-we-do" class="carousel slide" data-ride="carousel">
+            <h1 style="color: red ;">WHAT WE CAN DO</h1><br>
+            <DIV class="div1">
+            <h3>SERVICES PROVIDE FOR YOU</h3>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellintesque vital ante at alit fringilla ac at pursus. Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+            </DIV>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                .slider-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 800px;
+                    margin: auto;
+                    overflow: hidden;
+                }
+                .slider {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+                .slide {
+                    min-width: 100%;
+                    transition: 0.5s;
+                    position: relative;
+                }
+                .slide img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+                .hover-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+                .slide:hover .hover-overlay {
+                    opacity: 1;
+                }
+                .dots {
+                    text-align: center;
+                    padding: 10px;
+                }
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 5px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                .active {
+                    background-color: #717171;
+                }
+            </style>
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1560264418-c4445382edbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" >
+                    <div class="hover-overlay">
+                        <p>Hovered Design 1</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+                    <div class="hover-overlay">
+                        <p>Hovered Design 2</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1865153395/display_1500/stock-photo-portrait-of-young-smiling-woman-looking-at-camera-with-crossed-arms-happy-girl-standing-in-1865153395.jpg" alt="Image 3">
+                    <div class="hover-overlay">
+                        <p>Hovered Design 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+        
+            function showSlide(index) {
+                if (index >= slides.length) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = slides.length - 1;
+                } else {
+                    currentIndex = index;
+                }
+                const offset = -currentIndex * 100;
+                document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+        
+                dots.forEach((dot, idx) => {
+                    dot.className = dot.className.replace(' active', '');
+                    if (idx === currentIndex) {
+                        dot.className += ' active';
+                    }
+                });
+            }
+        
+            function currentSlide(index) {
+                showSlide(index);
+            }
+        
+            function autoSlide() {
+                currentIndex++;
+                showSlide(currentIndex);
+            }
+        
+            setInterval(autoSlide, 3000); // Change image every 3 seconds
+        
+            document.addEventListener('DOMContentLoaded', () => {
+                showSlide(currentIndex);
+            });
+        </script>
+        <DIV class="yes">
+        <h2 style="color: red;">WHY CHOOSE US</h2><br>
+         <h1>WHY WE ARE BEST</h1>
+        </DIV>
+        <div class="kiki">
+            <div class="icon">
+                <i class="fa fa-bullseye" style="font-size:48px;color:black"></i><br>
+                <h1>Clarified Vission & Taget<p class="giri" style="font-size: 20px;"><br>
+                    Lorem ipuum dolor sit amet,conseteus sadipscing elitr, sed diam nonumy.</p></h1></div><br>
+            <br> 
+            <div class="icon">
+                <i class='fas fa-tachometer-alt' style='font-size:48px;color:black'></i><br>
+                <h1>High performance<p class="giri" style="font-size: 20px;"><br><br><br>Lorem ipuum dolor sit amet,conseteus sadipscing elitr, sed diam nonumy.</p></h1><br>
+                <br></h1>
+            </div>
+            <div class="icon">
+                <i class='fas fa-fingerprint' style='font-size:48px;color:black'></i><br>
+                <h1>Maintain Security<p class="giri" style="font-size: 20px;"><br><br><br>Lorem ipuum dolor sit amet,conseteus sadipscing elitr, sed diam nonumy.</p></h1><br>
+                <br></h1>
+            </div>
+            <div class="icon">
+                <i class='fas fa-balance-scale' style='font-size:48px;color:black'></i><br>
+                <h1>Better Strategy & Quality<p class="giri" style="font-size: 20px;"><br>Lorem ipuum dolor sit amet,conseteus sadipscing elitr, sed diam nonumy.</p></h1><br>
+                <br></h1>
+            </div>
+        </div>
+    </div>
+    <div class="rupa">
+        <DIV class="laddu">
+            <h1>OUR PROJECT</h1>
+        </DIV>
+        <h1 class="siddu">WHY WE ARE BEST</h1><br>
+        <img class="chamu" src="https://img.etimg.com/thumb/msid-103415475,width-300,height-225,imgsize-24712,resizemode-75/what-to-eat-in-your-20s-30s-40s-and-beyond.jpg">
+        <div class="megha">
+            <div class="s1">
+                <h1>Genderless Kei</h1>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+            <br>
+            <br>
+            </div>
+            <div class="s1">
+                <h1>Genderless Kei</h1>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+            <br>
+            <br>
+            </div>
+            <div class="s1">
+                <h1>Genderless Kei</h1>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+            </div>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+<div class="new" >
+    <h3 style="text-align: center; color: red;">EXPERTS GROWTS</h3>
+    <BR>
+    <H1 style="text-align: center;">OUR COMAPNY GROWTH</H1>
+    <div class="stats-container">
+        <div class="stat-item">
+            <i class="fa fa-heart" style="font-size:48px;color:red"></i>
+            <p>199+ <br> Satisfied Customers</p>
+        </div>
+        <div class="stat-item">
+            <i class='fas fa-clock' style='font-size:48px;color:red'></i>
+            <p>1591+ <br> Days Of Operation</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa fa-check-circle" style="font-size:48px;color:red"></i>
+            <p>283+ <br> Complete Projects</p>
+        </div>
+        <div class="stat-item">
+            <i class='fas fa-award' style='font-size:48px;color:red'></i>
+            <p>75+ <br> Win Awards</p>
+        </div>
+        <div class="stat-item">
+            <i class='far fa-address-card' style='font-size:48px;color:red'></i>
+            <p>1200+ <br>High management Accuracy</p>
+        </div>
+        
+        
+    </div>
+</div>
+<br>
+<br>
+    <h3 style="text-align: center; color: red;">CLIENT'S FEEDBACK</h3><br>
+    <h1 style="text-align: center;">PEOPLE SAY'S ABOUT US!</h1>
+    <p style="text-align:center;">Jannat Trupma The standard chuck of Lorem ipsum used since the 1500s is reproduced bellow for those intrested. Sections Bonorum et Malorum et Malorum original </p>
+    <h3 style="text-align: center;"><span style="color: red;">JANNAT TUMPA</span>-COO,AMERIMAR ENTERPRISES,INC.</h3>
+</div>
+<br>
+<br>
+<div class="mama2">
+    <div class="mama">
+        <img class="logo" src="https://img.freepik.com/free-vector/gradient-go-logo-template_52683-65769.jpg?w=996&t=st=1717261537~exp=1717262137~hmac=d1794ec1de8d9016fd089009adbc2c7ec4172e4c8896f7f0d6ddb47cdc7874e6" alt="" width="100px;" height="100px" style="background-color: red;">
+        
+        <img class="logo" src="https://img.freepik.com/premium-vector/colorfull-abstract-flower-logo_115476-31.jpg?w=740" alt="" height="100px" width="100px">
+        <img class="logo" src="https://img.freepik.com/premium-vector/abstract-geometric-logo-created-with-overlapping-smooth-shapes_205544-56734.jpg?w=1060" alt="" height="100px" width="100px">
+        <img class="logo" src="https://img.freepik.com/free-vector/gradient-communication-design-template_23-2149837179.jpg?t=st=1717295241~exp=1717298841~hmac=78e68b021bd4f5e721da8f57e48374d63869592ae589710960ed69676d4eb097&w=740" alt="" width="100px" height="100px">
+        <img class="logo" src="https://img.freepik.com/free-vector/gradient-abstract-logo_52683-8561.jpg?w=740&t=st=1717260445~exp=1717261045~hmac=89fefb062fc79b844deea967cae042142799c63b35011f8b2a2393bcb5670604" alt="" width="100px" height="100px">
+        <img class="logo" src="https://img.freepik.com/free-vector/golden-blue-diamond-shape-logo-business-template_23-2148707648.jpg?w=740&t=st=1717260477~exp=1717261077~hmac=7ffe9a7382301b2d21b5e966958da2072f662044cf1a9f691007b908698968ef" alt="" height="100px" width="100px">
+        
+    </div>
+</div> 
+    <!-- Contact Form Modal -->
+    
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="email" required placeholder="Work email*">
+                        </div>
+                        <div class="form-group1">
+                            <label for="name"></label>
+                            <input type="name" class="form-control" id="name" required placeholder="First name*">
+                            <input type="name" class="form-control" id="name" required placeholder="Last name*">
+                    </div>
+                        <div class="form-group">
+                        <input type="checkbox" class="check"><p>I agree to Fyle's terms and conditions, and provide consent to send me communication.</p>
+                        </div>
+                        <button type="submit" class="btn">Contact Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
